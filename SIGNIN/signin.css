@@ -1,0 +1,58 @@
+body{
+    font-family: Poppins;
+    background-color: #1576B8;
+}
+.loginContainer{
+    font-family: Poppins;
+    background-color: white;
+    height: 500px;
+    text-align: center;
+    align-items: center;
+    margin: 50px 500px 50px 500px;
+    padding: 30px 50px 30px 30px;
+    border-radius: 10px;
+}
+.loginContainer form input{
+    width: 300px;
+    font-size: 18px;
+    color: black;
+    padding:5px;
+    margin: 5px;
+    border-radius: 5px;
+    border-width: thin;
+    border-color: rgb(124, 124, 124);
+}
+.loginContainer form input[type=submit]{
+    background-color: #015792;
+    color: white;
+    border:none;
+    padding:5px;
+    cursor: pointer;
+}
+.loginContainer button{
+    color:white;
+    width: 300px;
+    font-size: 18px;
+    margin: 5px;
+}
+.loginContainer button{
+    background-color: #26AB35;
+    border:none;
+    padding:5px;
+    border-radius: 5px;
+}
+.loginContainer img{
+    margin: 10px 5px;
+    width:300px;
+    height: auto;
+    margin: 40px 0px 50px 0px;
+}
+.loginContainer a{
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+}
+.loginContainer button{
+    text-decoration: none;
+    cursor: pointer;
+}
