@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Student Register</title>
+        <title>Employer Register</title>
         <link rel="stylesheet" href="../../header.css">
-        <link rel="stylesheet" href="signupUser.css">
+        <link rel="stylesheet" href="signupEmployer.css">
     </head>
     <body>
         <div class="header">
@@ -11,15 +11,15 @@
         </div>
         <div class = "container">
             <div class="formContainer">
-                <h3>Create Applicant Account</h3>
-                <form action="../signupStudent.php" method="POST">
+                <h3>Create Employer Account</h3>
+                <form action="../signupEmployer.php" method="POST">
                     <span class="label"><b>First Name:</b></span><br>
                         <input type="text" name="firstName" placeholder="Enter name here" required><br/>
                     <span class="label"><b>Last Name:</b></span><br>
                         <input type="text" name="lastName" placeholder="Enter last name here" required><br/>
-                    <span class="label"><b>Age </b></span><br>
-                        <input type="text" name="age" placeholder="Enter age here" required><br/>
-                    <span class="label"><b>Email Address:</b></span><br>
+                    <span class="label"><b>Company: </b></span><br>
+                        <input type="text" name="company_name" placeholder="Enter company here" required><br/>
+                    <span class="label"><b>Work Email Address:</b></span><br>
                         <input type="email" name="email" placeholder="Enter email here" required><br/>
                     <span class="label"><b>Password:</b></span><br>
                         <input type="text" name="password" placeholder="Enter password here" required><br/>

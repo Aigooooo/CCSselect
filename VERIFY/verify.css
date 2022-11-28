@@ -1,0 +1,46 @@
+body{
+    background-color: #EFEFEF;
+    width:100%;
+    margin:0px;
+    color:#001D3D;
+    font-family: Poppins;
+}
+.container{
+    font-family: Poppins;
+    background-color: white;
+    height: 500px;
+    text-align: center;
+    align-items: center;
+    margin: 50px 100px 50px 100px;
+    padding: 30px 50px 30px 30px;
+    display: block;
+}
+h2{
+    color: #0E1111;
+}
+.container form input{
+    width: 300px;
+}
+.label{
+    color: black;
+    margin-left: -160px;
+}
+.container form input[type=submit]{
+    margin-top: 5px;
+    background-color: #015792;
+    border: none;
+    font-size: 15px;
+    color:white;
+    padding: 5px;
+}
+.container form input[type=text]{
+    font-size: 15px;
+}
+.proceedBtn{
+    background-color: #015792;
+    color: white;
+    width: 200px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,76 @@
+body{
+    background-color: #EFEFEF;
+    width:100%;
+    margin:0px;
+    color:#001D3D;
+}
+
+.container{
+    font-family: Poppins;
+    background-color: white;
+    height: 500px;
+    text-align: center;
+    align-items: center;
+    margin: 50px 100px 50px 100px;
+    padding: 30px 50px 30px 30px;
+    display: flex;
+    justify-content: center;
+}
+.formContainer{
+    width:50%;
+    position:relative;
+    margin-top: -50px;
+}
+.formContainer input{
+    font-size: 12px;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+.formContainer form input[type=text]{
+    width: 400px;
+}
+.formContainer form input[type=email]{
+    width: 400px;
+}
+.formContainer form input[type=password]{
+    width: 400px;
+}
+.formContainer form input[type=number]{
+    width: 400px;
+}
+.formContainer form input[type=submit]{
+    margin-top: 10px;
+    margin-right: -200px;
+    width: 100px;
+    background-color: #015792;
+    border: none;
+    font-size: 18px;
+    color: white;
+    border-radius: 3px;
+    margin-top: 40px;
+    padding:3px;
+    cursor: pointer;
+}
+.label{
+    float:left;
+    margin-left: 80px;
+}
+.imgContainer{
+    margin-top: -100px;
+    margin-left: 200px;
+}
+.imgContainer img{
+    margin-right: 50px;
+}
+.backBtn{
+    margin-top: 10px;
+    width: 100px;
+    background-color: white;
+    color: #015792;
+    border-color: #015792;
+    border-radius: 3px;
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+

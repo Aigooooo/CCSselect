@@ -21,7 +21,7 @@
             ?>
                 <script>
                     alert("Verify account done, you may sign in now!");
-                    window.location.replace('/CCSselect/SIGNIN/signin.html');
+                    window.location.replace('/CCSselect/VERIFY/verifyComplete.html');
                 </script>
             <?php
         }

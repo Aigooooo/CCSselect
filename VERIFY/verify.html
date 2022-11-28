@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Verify</title>
+        <title>Verification</title>
+        <link rel="stylesheet" href="../header.css">
+        <link rel="stylesheet" href="verify.css">
     </head>
     <body>
-        <h2>Verify your account</h2>
-        <form action="verify.php" method="POST">
-            <input type="text" name="code" placeholder="OTP">
-            <input type="submit" value="verify">
-        </form>
+        <div class="header">
+            <img src="../images/ccsselectlogo.png" alt="CCSselect Logo">
+        </div>
+        <div class="container">
+            <img src="./images/undraw_subscribe_vspl 1.svg" alt="">
+            <h2>Verify your email address</h2>
+            <p>Before proceeding, kindly verify your account in the email that you provided. We've <br>sent you a verification code there.</p>
+            <form action="verify.php" method="POST">
+                <span class="label"><b>Verification Code: </b> </span><br>
+                <input type="text" name="code" placeholder="Enter code here"><br>
+                <input type="submit" value="Confirm">
+            </form>
+        </div> 
     </body>
 </html>

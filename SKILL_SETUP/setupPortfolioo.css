@@ -1,0 +1,70 @@
+body{
+    background-color: #EFEFEF;
+    width:100%;
+    margin:0px;
+    color:#001D3D;
+}
+
+.container{
+    background-color: white;
+    height: 500px;
+    text-align: center;
+    align-items: center;
+    margin: 50px 100px 50px 100px;
+    padding: 30px 50px 30px 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.formContainer{
+    width:50%;
+    position:relative;
+    margin-top: -50px;
+    font-family: Poppins;
+}
+
+.formContainer h3{
+    margin-left: -300px;
+}
+
+.formContainer input[type=file]{
+    margin-left: -120px;
+    font-family: Poppins;
+}
+.formContainer input[type=text]{
+    width: 400px;
+    margin-left: 10px;
+    font-family: Poppins;
+}
+.formContainer input[type=submit]{
+    background-color: #015792;
+    color:white;
+    border: none;
+    font-size: 12px;
+    padding:5px;
+    cursor: pointer;
+    font-family: Poppins;
+}
+.imgContainer{
+    margin-top: -100px;
+    margin-left: 200px;
+}
+.imgContainer img{
+    margin-right: 50px;
+}
+#positions{
+    width: 400px;
+    font-family: Poppins;
+}
+#skills{
+    width: 400px;
+}
+textarea{
+    resize: none;
+    margin-left: 5px;
+    font-family: Poppins;
+}
+.label{
+    float:left;
+    margin-left: 83px;
+}
