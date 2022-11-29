@@ -30,9 +30,9 @@
         <div class = "container">
             <div class="formContainer">
                 <h3>Setup Portfolio</h3>
-                <form name="skillForm" action="../SKILL_SETUP/skills.php" method="POST">
+                <form name="skillForm" action="skills.php" method="POST" enctype="multipart/form-data">
                     <span class="label"><b>Upload CV:</b></span><br>
-                        <input type="file" name="resume" placeholder="" required><br/>
+                        <input type="file" name="resume" accept = ".jpg, .jpeg, .png, .jvg" placeholder="" required><br/>
                     <span class="label"><b>Desired Position: </b></span><br>
                         <?php
                             $query = "SELECT * FROM job_positions ORDER BY positionName ASC";
@@ -60,12 +60,12 @@
                             if($skillResult)
                             {
                                 ?>
-                                    <select id="skills" multiple="multiple">
+                                    <select name = "skills[]" id="skills" multiple="multiple">
                                         <?php 
                                             foreach($skillResult as $skillResult)
                                             {
                                                 ?>
-                                                    <option><?php echo $skillResult['skill_name']?></option>
+                                                    <option value="<?php echo $skillResult['skill_name']?>"><?php echo $skillResult['skill_name']?></option>
                                                 <?php
                                             }   
                                         ?>
