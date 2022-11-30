@@ -152,7 +152,7 @@
                 {?> 
                     <div class="skills">
                         <div class="skills-header">
-                            <h2>Skills</h2>
+                            <h2><b>Skills</b></h2>
                             <hr />
                         </div>
                         <div class="skills-content">
