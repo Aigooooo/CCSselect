@@ -26,17 +26,17 @@
 
         if($error === 0)
         {
-            if($img_size > 1000000)
+            if($img_size > 10000000)
             {
                 $em = "Resume file is too large!";
                 header("Location: skills.php?error=$em");
             }
-            else if($certificate_img_size > 1000000)
+            else if($certificate_img_size > 10000000)
             {
                 $em = "Certificate file is too large!";
                 header("Location: skills.php?error=$em");
             }
-            else if($certificate_img_size > 1000000 && $img_size > 1000000)
+            else if($certificate_img_size > 10000000 && $img_size > 10000000)
             {
                 $em = "Your file is too large!";
                 header("Location: skills.php?error=$em");
@@ -66,6 +66,7 @@
                     move_uploaded_file($certificate_tmp_name, $certificate_upload_path);
                     
                     //insert to database!
+                    //Bug - An error occurs when the description contains apostrophy!
                     $query = "INSERT INTO user_portfolio (email, desired_position, resume, first_skill, second_skill, third_skill, description, certificate, date_created) VALUES ('$email','$itFields','$new_img_name','$skills[0]', '$skills[1]', '$skills[2]', '$description','$certificate_new_img_name','$date_val')";
                     $result = mysqli_query($conn, $query);
                     if($result)
