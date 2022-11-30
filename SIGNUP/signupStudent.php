@@ -13,14 +13,15 @@
     $phoneNumber = $_POST['phoneNumber'];
     $date_val = date("Y-m-d H:i:s");
     $verificationStatus = "Not Verified";
-    $role = "User";
+    $profilePic = "default_profile.png";
+    $role = "Applicant";
     $stmtDb;
 
     if(!empty($firstName) || !empty($lastName) || !empty($age) || !empty($email) || !empty($password) ||!empty($phoneNumber))
     {
         $select = "SELECT email FROM accounts WHERE email = ? LIMIT 1";
-        $insert = "INSERT INTO accounts (firstName, lastName, age, email, password, dateRegistered, role, verificationStatus, phoneNumber) 
-                    VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)";
+        $insert = "INSERT INTO accounts (firstName, lastName, age, email, password, dateRegistered, role, verificationStatus, phoneNumber, profilePic) 
+                    VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
         $stmt = $conn->prepare($select);
         $stmt->bind_param("s", $email);
@@ -33,7 +34,7 @@
             $stmt->close();
             $stmtDb = $conn->prepare($insert);
             $otp = rand(100000,999999);
-            $stmtDb->bind_param("ssisssssi",$firstName, $lastName, $age, $email, $password, $date_val, $role, $verificationStatus, $phoneNumber);
+            $stmtDb->bind_param("ssisssssis",$firstName, $lastName, $age, $email, $password, $date_val, $role, $verificationStatus, $phoneNumber, $profilePic);
             $stmtDb->execute();
             
             if($stmt)

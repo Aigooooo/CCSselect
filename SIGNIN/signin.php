@@ -23,16 +23,16 @@
                     $_SESSION['company_name'] = $row['company_name'];
                     $_SESSION['email'] = $row['email'];
                     //$_SESSION['password'] = $row['password'];   
-                    header("Location: /CCSSELECT/HOME/EMPLOYER_HOMEPAGE/homeEmployer.html");
+                    header("Location: /CCSSELECT/HOME/EMPLOYER_HOMEPAGE/homeEmployer.php");
                 }
-                else if($_SESSION['role'] == "User")
+                else if($_SESSION['role'] == "Applicant")
                 {
                     $_SESSION['firstName'] = $row['firstName'];
                     $_SESSION['lastName'] = $row['lastName'];
                     $_SESSION['age'] = $row['age'];
                     $_SESSION['email'] = $row['email'];
                     //$_SESSION['password'] = $row['password'];   
-                    header("Location: /CCSSELECT/HOME/STUDENT_HOMEPAGE/homeStudent.html");
+                    header("Location: /CCSSELECT/HOME/STUDENT_HOMEPAGE/homeStudent.php");
                 }
             }
             else
