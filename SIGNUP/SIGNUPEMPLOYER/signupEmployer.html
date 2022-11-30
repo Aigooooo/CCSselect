@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Employer Register</title>
+        <link rel="stylesheet" href="../../header.css">
+        <link rel="stylesheet" href="signupEmployer.css">
+    </head>
+    <body>
+        <div class="header">
+            <img src="../../images/ccsselectlogo.png" alt="CCSselect Logo">
+        </div>
+        <div class = "container">
+            <div class="formContainer">
+                <h3>Create Employer Account</h3>
+                <form action="../signupEmployer.php" method="POST">
+                    <span class="label"><b>First Name:</b></span><br>
+                        <input type="text" name="firstName" placeholder="Enter name here" required><br/>
+                    <span class="label"><b>Last Name:</b></span><br>
+                        <input type="text" name="lastName" placeholder="Enter last name here" required><br/>
+                    <span class="label"><b>Company: </b></span><br>
+                        <input type="text" name="company_name" placeholder="Enter company here" required><br/>
+                    <span class="label"><b>Work Email Address:</b></span><br>
+                        <input type="email" name="email" placeholder="Enter email here" required><br/>
+                    <span class="label"><b>Password:</b></span><br>
+                        <input type="text" name="password" placeholder="Enter password here" required><br/>
+                    <span class="label"><b>Phone Number:</b></span><br>
+                        <input type="number" name="phoneNumber" placeholder="Enter phone number here"><br/>
+                    <!--<a href="../../USERSELECTION/userselection.html">
+                        <button class="backBtn">Back</button>
+                    </a>-->
+                        <input type="submit" value="Next">
+                </form>
+            </div>
+            <div class="imgContainer">
+                <img src="../images/design2.svg" alt="">
+            </div>
+        </div>
+    </body>
+</html>

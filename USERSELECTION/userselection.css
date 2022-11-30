@@ -1,0 +1,41 @@
+body{
+    background-color: #EFEFEF;
+    width:100%;
+    margin:0px;
+    color:#001D3D;
+}
+.container{
+    font-family: Poppins;
+    background-color: white;
+    height: 500px;
+    text-align: center;
+    align-items: center;
+    margin: 50px 500px 50px 500px;
+    padding: 30px 50px 30px 30px;
+    border-radius: 10px;
+}
+.greetings{
+    font-size: 20px;
+}
+.greetingMessage{
+    color: black;
+    margin-left: 125px;
+    float:left;
+}
+.create{
+    font-size: 20px;
+    margin-left: -260px;
+}
+.userType{
+    font-size: 12px;
+    margin-left: -340px;
+}
+.btnContainer img{
+    width: auto;
+    height: 65px;
+    margin:5px;
+}
+.btnContainer{
+    align-items: center;
+    position: relative;
+}
