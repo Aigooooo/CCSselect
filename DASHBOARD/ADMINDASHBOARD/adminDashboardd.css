@@ -1,0 +1,11 @@
+.admin-dashboard{
+    background-color: #1576B8;
+    padding: 2% 2%;
+}
+.admin-dashboard h1{
+    color: white;
+}
+.dashboard-content{
+    margin: 3%;
+    display: flex;
+}

@@ -1,0 +1,62 @@
+body{
+    font-family: Poppins;
+    background-color: #001D3D;
+}
+.loginContainer{
+    background-color: white;
+    margin: 5% 33%;
+    color:#001D3D;
+    font-family: Poppins;
+    border-radius: 10px;
+}
+.img-content{
+    display:flex;
+    justify-content: center;
+}
+.img-content img{
+    margin: 5% 10%;
+    width: 50%;
+}
+.form-content{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.create-account{
+    display:flex;
+    justify-content: center;
+}
+.forgot-password{
+    display:flex;
+    justify-content: center;
+}
+.input-user{
+    margin: 1% auto;
+    width: 100%;
+}
+.input-user input{
+    width: 300px;
+    font-size: 18px;
+    padding:5px;
+    margin: 5px;
+    border-radius: 5px;
+    border-width: thin;
+    border-color: rgb(124, 124, 124);
+}
+.input-user input[type="submit"]{
+    background-color: #015792;
+    color: white;
+    border:none;
+    cursor: pointer;
+}
+.create-account button{
+    color:white;
+    background-color: #26AB35;
+    width: 300px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-bottom: 15%;
+    border-color: #26AB35;
+    cursor: pointer;
+}

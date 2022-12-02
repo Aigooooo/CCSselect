@@ -1,6 +1,7 @@
 <?php
     include $_SERVER["DOCUMENT_ROOT"]."/CCSselect/CONNECTION/connection.php";
     session_start();
+    $userid = $_GET['userid'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -8,8 +9,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Student Profile</title>
-    <link rel="stylesheet" href="studentProfile.css">
+    <title>Profile</title>
+    <link rel="stylesheet" href="profile.css">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -22,7 +23,7 @@
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img
-            src="../../images/ccsselectlogo.png"
+            src="../images/ccsselectlogo.png"
             alt="Logo"
             width="200"
             height="40"
@@ -50,8 +51,7 @@
           <p class="view-resume">View Resume</p>
           <span> <b>User Type:</b> </span>
           <?php
-            $email = $_SESSION["email"];
-            $query = "SELECT * FROM accounts WHERE email = '$email'";
+            $query = "SELECT * FROM accounts WHERE id = '$userid'";
             $result = mysqli_query($conn, $query);
             if(mysqli_num_rows($result) > 0)
             {
@@ -67,7 +67,7 @@
       <hr />
       <?php
             $email = $_SESSION["email"];
-            $query = "SELECT * FROM accounts WHERE email = '$email'";
+            $query = "SELECT * FROM accounts WHERE id = '$userid'";
             $result = mysqli_query($conn, $query);
             if(mysqli_num_rows($result) > 0)
             {
@@ -75,7 +75,7 @@
                 {?>
                         <div class="profile-content-container">
                             <div class="left-content">
-                                <img src="../../RESOURCES/Profile_Pictures/<?=$res["profilePic"]?>" class="profile-photo">
+                                <img src="../RESOURCES/Profile_Pictures/<?=$res["profilePic"]?>" class="profile-photo">
                                 <p class="profile-name">
                                     <?=$res["firstName"]." ".$res["lastName"]?>
                                 </p><br>
@@ -85,8 +85,7 @@
             ?>
         </div>
         <?php
-            $email = $_SESSION["email"];
-            $query = "SELECT * FROM user_portfolio WHERE email = '$email'";
+            $query = "SELECT * FROM user_portfolio WHERE user_id = '$userid'";
             $result = mysqli_query($conn, $query);
                 if(mysqli_num_rows($result) > 0)
                 {
@@ -113,7 +112,7 @@
         </div>
         <?php
             $email = $_SESSION["email"];
-            $query = "SELECT * FROM accounts WHERE email = '$email'";
+            $query = "SELECT * FROM accounts WHERE id = '$userid'";
             $result = mysqli_query($conn, $query);
             if(mysqli_num_rows($result) > 0)
             {
@@ -143,8 +142,7 @@
             }
         ?>
         <?php
-            $email = $_SESSION["email"];
-            $query = "SELECT * FROM user_portfolio WHERE email = '$email'";
+            $query = "SELECT * FROM user_portfolio WHERE user_id = '$userid'";
             $result = mysqli_query($conn, $query);
             if(mysqli_num_rows($result) > 0)
             {
@@ -166,7 +164,7 @@
                         <h2><b>Certificates</b></h2>
                         <hr />
                         <div class="certificate-content">
-                            <img src="../../RESOURCES/Certificates/<?=$res["certificate"]?>" class="cert">
+                            <img src="../RESOURCES/Certificates/<?=$res["certificate"]?>" class="cert">
                         </div>
                     </div>
                 <?php 
@@ -174,8 +172,7 @@
             }
         ?>
         <?php
-            $email = $_SESSION["email"];
-            $query = "SELECT * FROM user_portfolio WHERE email = '$email'";
+            $query = "SELECT * FROM user_portfolio WHERE user_id = '$userid'";
             $result = mysqli_query($conn, $query);
             if(mysqli_num_rows($result) > 0)
             {
@@ -193,7 +190,7 @@
                 <?php 
                 }
             }
-        ?>            
+        ?>               
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"

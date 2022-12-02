@@ -34,6 +34,15 @@
                     //$_SESSION['password'] = $row['password'];   
                     header("Location: /CCSSELECT/HOME/STUDENT_HOMEPAGE/homeStudent.php");
                 }
+                else if($_SESSION['role'] == "Admin")
+                {
+                    $_SESSION['firstName'] = $row['firstName'];
+                    $_SESSION['lastName'] = $row['lastName'];
+                    $_SESSION['age'] = $row['age'];
+                    $_SESSION['email'] = $row['email'];
+                    //$_SESSION['password'] = $row['password'];   
+                    header("Location: /CCSSELECT/HOME/ADMIN_HOMEPAGE/homeAdmin.php");
+                }
             }
             else
             {
