@@ -1,76 +1,64 @@
-body{
-    background-color: #EFEFEF;
-    width:100%;
-    margin:0px;
-    color:#001D3D;
+body {
+  background-color: #efefef !important;
+  width: 100%;
+  margin: 0px;
 }
 
-.container{
-    font-family: Poppins;
-    background-color: white;
-    height: 500px;
-    text-align: center;
-    align-items: center;
-    margin: 50px 100px 50px 100px;
-    padding: 30px 50px 30px 30px;
-    display: flex;
-    justify-content: center;
+.signup-container {
+  background-color: white;
+  margin: 30px auto;
+  height: auto;
+  width: 70%;
+  display: flex;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
-.formContainer{
-    width:50%;
-    position:relative;
-    margin-top: -50px;
+.signup-container .form-container {
+  width: 40%;
+  padding: 50px 5% 50px 8%;
 }
-.formContainer input{
-    font-size: 12px;
-    padding-top:5px;
-    padding-bottom:5px;
+.signup-container .form-container .page-header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
 }
-.formContainer form input[type=text]{
-    width: 400px;
+.signup-container .form-container .page-header .back-icon {
+  color: #001d3d;
+  padding-right: 8px;
+  font-size: 1.4rem;
+  margin-left: -28px;
 }
-.formContainer form input[type=email]{
-    width: 400px;
+.signup-container .form-container .page-header .page-title {
+  margin: 0;
+  color: #001d3d;
+  font-weight: 700;
+  font-size: 1.5rem;
 }
-.formContainer form input[type=password]{
-    width: 400px;
+.signup-container .form-container [type=button],
+.signup-container .form-container [type=reset],
+.signup-container .form-container [type=submit],
+.signup-container .form-container button {
+  float: right;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: #015792;
+  margin-top: 20px;
+  padding: 5px 20px 5px 20px;
+  border: none;
+  border-radius: 3px;
 }
-.formContainer form input[type=number]{
-    width: 400px;
+.signup-container .image-container {
+  width: 30%;
+  padding: 60px 0 20px 0;
+  margin: 0 auto;
 }
-.formContainer form input[type=submit]{
-    margin-top: 10px;
-    margin-right: -200px;
-    width: 100px;
-    background-color: #015792;
-    border: none;
-    font-size: 18px;
-    color: white;
-    border-radius: 3px;
-    margin-top: 40px;
-    padding:3px;
-    cursor: pointer;
+.signup-container .image-container .top-message {
+  font-size: 1.7rem;
+  font-weight: 600;
+  padding-top: 15px;
 }
-.label{
-    float:left;
-    margin-left: 80px;
+.signup-container .image-container .bottom-message {
+  font-size: 1.1rem;
 }
-.imgContainer{
-    margin-top: -100px;
-    margin-left: 200px;
-}
-.imgContainer img{
-    margin-right: 50px;
-}
-.backBtn{
-    margin-top: 10px;
-    width: 100px;
-    background-color: white;
-    color: #015792;
-    border-color: #015792;
-    border-radius: 3px;
-    margin-top: 40px;
-    font-size: 18px;
-}
-
-
+.signup-container .image-container .illustration {
+  width: 100%;
+}/*# sourceMappingURL=signupUser2.css.map */
