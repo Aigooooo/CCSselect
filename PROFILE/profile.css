@@ -1,0 +1,82 @@
+body {
+    background-color: #e6e6e6 !important;
+  }
+  
+  .container {
+    background-color: white;
+    margin: 5% auto;
+    color:#001D3D;
+    font-family: Poppins;
+  }
+  
+  .profile-content-container {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 20px 40px 0px 40px;
+  }
+  
+  .left-content {
+    display: flex;
+  }
+  
+  .profile-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 40px 0px 40px;
+  }
+  
+  .profile-photo {
+    width: 20%;
+  }
+  
+  .profile-name {
+    font-size: 1.5rem;
+  }
+  
+  .right-content {
+    display: flex;
+  }
+  
+  .desired-position-title {
+    width: 60%;
+  }
+  
+  .personal-information-content {
+    height: 260px;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column wrap;
+  }
+  .personal-information-section{
+    padding: 10px 40px 0px 40px;
+  }
+  
+  .information-title {
+    font-weight: bold;
+  }
+  
+  .skills-content {
+    display: flex;
+  }
+  
+  .skill-item {
+    background-color: #015792;
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
+    margin-right: 10px;
+  }
+  .skills{
+    padding: 10px 40px 0px 40px;
+  }
+
+  .certificates{
+    padding: 30px 40px 10px 40px;
+  }
+  .cert{
+    width: 20%;
+  }
+
+  .description{
+    padding: 10px 40px 10px 40px;
+  }
