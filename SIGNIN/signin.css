@@ -1,58 +1,56 @@
-body{
-    font-family: Poppins;
-    background-color: #1576B8;
+body {
+  font-family: Poppins;
+  background-color: #1576b8 !important;
 }
-.loginContainer{
-    font-family: Poppins;
-    background-color: white;
-    height: 500px;
-    text-align: center;
-    align-items: center;
-    margin: 50px 500px 50px 500px;
-    padding: 30px 50px 30px 30px;
-    border-radius: 10px;
+
+.signin-container {
+  background-color: white;
+  width: 35%;
+  height: auto;
+  margin: 5% auto;
+  padding: 4%;
+  color: #001d3d;
+  font-family: Poppins;
+  border-radius: 10px;
 }
-.loginContainer form input{
-    width: 300px;
-    font-size: 18px;
-    color: black;
-    padding:5px;
-    margin: 5px;
-    border-radius: 5px;
-    border-width: thin;
-    border-color: rgb(124, 124, 124);
+.signin-container .signin-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
 }
-.loginContainer form input[type=submit]{
-    background-color: #015792;
-    color: white;
-    border:none;
-    padding:5px;
-    cursor: pointer;
+.signin-container .signin-header .img-header {
+  width: 100%;
 }
-.loginContainer button{
-    color:white;
-    width: 300px;
-    font-size: 18px;
-    margin: 5px;
+.signin-container .signin-header .tagline {
+  font-size: 0.9rem;
+  padding-left: 23%;
+  padding-bottom: 8%;
+  margin-top: -18px;
 }
-.loginContainer button{
-    background-color: #26AB35;
-    border:none;
-    padding:5px;
-    border-radius: 5px;
+.signin-container .submit-btn {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #015792;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  padding: 1.5%;
 }
-.loginContainer img{
-    margin: 10px 5px;
-    width:300px;
-    height: auto;
-    margin: 40px 0px 50px 0px;
+.signin-container .forgot-password {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  text-decoration: none;
 }
-.loginContainer a{
-    text-decoration: none;
-    font-size: 12px;
-    cursor: pointer;
-}
-.loginContainer button{
-    text-decoration: none;
-    cursor: pointer;
-}
+.signin-container .create-account-btn {
+  background-color: #26ab35;
+  border: none;
+  display: flex;
+  justify-content: center;
+  font-size: 1.3rem;
+  padding: 1.5%;
+}/*# sourceMappingURL=signin.css.map */
