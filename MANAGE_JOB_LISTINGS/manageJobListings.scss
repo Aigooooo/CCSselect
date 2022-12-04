@@ -102,8 +102,13 @@ body {
     border-bottom: 1px solid #c4c4c4;
     display: flex;
     justify-content: flex-end;
+
     .search-bar {
       width: 35%;
+    }
+
+    .input-group .btn:hover {
+      background-color: #26ab35;
     }
   }
 

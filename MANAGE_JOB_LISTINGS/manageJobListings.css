@@ -84,6 +84,9 @@ body {
 .table-container .search-bar-section .search-bar {
   width: 35%;
 }
+.table-container .search-bar-section .input-group .btn:hover {
+  background-color: #26ab35;
+}
 .table-container .user-table {
   padding: 10px 1.4% 10px 1.4%;
 }
