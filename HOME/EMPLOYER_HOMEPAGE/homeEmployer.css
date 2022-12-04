@@ -1,0 +1,193 @@
+body {
+  width: 100%;
+  background: #ebebeb !important;
+}
+
+.navbar .container-fluid {
+  padding: 10px 50px 10px 50px;
+}
+.navbar .container-fluid .navbar-brand {
+  width: 180px;
+}
+.navbar .container-fluid .navbar-brand .logo {
+  width: 100%;
+}
+.navbar .container-fluid .profile-btn {
+  background-color: #015792;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 9px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.navbar .container-fluid .profile-btn:hover {
+  background-color: #117cc5;
+}
+.navbar .container-fluid .navbar-nav .nav-item {
+  font-size: 1.2rem;
+  margin-right: 20px;
+}
+.navbar .container-fluid .right-content {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .container-fluid .right-content .notification-bell {
+  color: #015792;
+  font-size: 18px;
+}
+.navbar .container-fluid .right-content .notification-bell:hover {
+  color: #fdbc40;
+  font-size: 18px;
+}
+.navbar .container-fluid .right-content .dropdown-container .dropstart .dropdown-menu[data-bs-popper] {
+  top: auto;
+  right: 0;
+}
+.navbar .container-fluid .right-content .dropdown-container .dropstart .dropdown-icon {
+  font-size: 23px;
+  padding-bottom: 10px;
+  color: #015792;
+}
+
+.home-content-container {
+  background-color: #015792;
+  height: 600px;
+}
+.home-content-container .home-content {
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 70px;
+}
+.home-content-container .home-content .left-home-content .homepage-illustration {
+  width: 80%;
+}
+.home-content-container .home-content .right-home-content {
+  color: white;
+  width: 40%;
+}
+.home-content-container .home-content .right-home-content .home-content-title {
+  font-size: 4rem;
+}
+
+.job-listing-header {
+  height: 170px;
+  background-color: #fff;
+  border-bottom: 1px solid rgb(163, 163, 163);
+}
+.job-listing-header .top-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px 10px 50px;
+  height: 100px;
+}
+.job-listing-header .top-section .top-section-title {
+  font-size: 3rem;
+}
+.job-listing-header .top-section .search-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: flex-start;
+}
+.job-listing-header .top-section input {
+  min-width: 20px;
+  padding: 8px;
+  margin: 0 4px 0 0;
+  border: 1px solid #666;
+  border-radius: 5px;
+  height: 48px;
+}
+.job-listing-header .top-section .search-btn {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 8px 16px;
+  min-height: 48px;
+  min-width: 10px;
+  word-wrap: nowrap;
+  background: #26ab35;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+.job-listing-header .top-section .search-btn .search-icon {
+  margin-right: 10px;
+}
+.job-listing-header .top-section input.search {
+  width: 600px;
+}
+.job-listing-header .top-section input.location {
+  width: 250px;
+}
+.job-listing-header .top-section input {
+  order: 0;
+  align-self: auto;
+}
+.job-listing-header .top-section .search {
+  flex: 2 1 auto;
+}
+.job-listing-header .top-section .location {
+  flex: 1 1 auto;
+}
+.job-listing-header .top-section .search-btn {
+  order: 4;
+  flex: 0 1 auto;
+  align-self: auto;
+}
+.job-listing-header .bottom-section .dropdown-container {
+  padding-right: 50px;
+}
+.job-listing-header .bottom-section .dropdown-container .dropdown .btn {
+  margin-left: 5px;
+  width: 200px;
+  float: right;
+  text-align: right;
+}
+.job-listing-header .bottom-section .dropdown-container .dropdown .btn .dropdown-title {
+  float: left;
+  margin-bottom: 0;
+}
+
+.applicant-list-container {
+  margin: 40px 2.8% 40px 2.8%;
+  padding: 30px 3% 30px 3%;
+  background-color: #fff;
+}
+.applicant-list-container .table .applicant-name {
+  width: 10%;
+}
+.applicant-list-container .table .job-type {
+  width: 10%;
+}
+.applicant-list-container .table .action-container {
+  color: #1890ff;
+}
+.applicant-list-container .table .action-container .view-icon {
+  font-size: 1.2rem;
+  padding-right: 5px;
+}
+.applicant-list-container .table .action-container:hover {
+  color: #fdbc40;
+}
+.applicant-list-container .table .applicant-skills-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+}
+.applicant-list-container .table .applicant-skills-container .skill-item {
+  border: 1px solid #117cc5;
+  border-radius: 2px;
+  color: #2f54eb;
+  background-color: #f0f5ff;
+  padding: 0 5px 0 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}/*# sourceMappingURL=homeEmployer.css.map */

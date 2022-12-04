@@ -1,0 +1,240 @@
+body {
+  width: 100%;
+  background: #ebebeb !important;
+}
+
+.navbar {
+  .container-fluid {
+    padding: 10px 50px 10px 50px;
+
+    .navbar-brand {
+      width: 180px;
+      .logo {
+        width: 100%;
+      }
+    }
+
+    .profile-btn {
+      background-color: #015792;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      padding: 9px 16px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .profile-btn:hover {
+      background-color: #117cc5;
+    }
+
+    .navbar-nav {
+      .nav-item {
+        font-size: 1.2rem;
+        margin-right: 20px;
+      }
+    }
+
+    .right-content {
+      width: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .notification-bell {
+        color: #015792;
+        font-size: 18px;
+      }
+
+      .notification-bell:hover {
+        color: #fdbc40;
+        font-size: 18px;
+      }
+
+      .dropdown-container {
+        .dropstart {
+          .dropdown-menu[data-bs-popper] {
+            top: auto;
+            right: 0;
+          }
+
+          .dropdown-icon {
+            font-size: 23px;
+            padding-bottom: 10px;
+            color: #015792;
+          }
+        }
+      }
+    }
+  }
+}
+
+.home-content-container {
+  background-color: #015792;
+  height: 600px;
+
+  .home-content {
+    height: 500px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 70px;
+
+    .left-home-content {
+      .homepage-illustration {
+        width: 80%;
+      }
+    }
+
+    .right-home-content {
+      color: white;
+      width: 40%;
+      .home-content-title {
+        font-size: 4rem;
+      }
+    }
+  }
+}
+
+.job-listing-header {
+  height: 170px;
+  background-color: #fff;
+  border-bottom: 1px solid rgb(163, 163, 163);
+  .top-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px 10px 50px;
+    height: 100px;
+
+    .top-section-title {
+      font-size: 3rem;
+    }
+
+    .search-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-content: stretch;
+      align-items: flex-start;
+    }
+
+    input {
+      min-width: 20px;
+      padding: 8px;
+      margin: 0 4px 0 0;
+      border: 1px solid #666;
+      border-radius: 5px;
+      height: 48px;
+    }
+
+    .search-btn {
+      display: flex;
+      justify-content: space-evenly;
+      font-size: 1.2rem;
+      font-weight: 500;
+      padding: 8px 16px;
+      min-height: 48px;
+      min-width: 10px;
+      word-wrap: nowrap;
+      background: #26ab35;
+      color: #fff;
+      border: 1px solid #fff;
+      border-radius: 5px;
+
+      .search-icon {
+        margin-right: 10px;
+      }
+    }
+
+    input.search {
+      width: 600px;
+    }
+
+    input.location {
+      width: 250px;
+    }
+
+    input {
+      order: 0;
+      align-self: auto;
+    }
+
+    .search {
+      flex: 2 1 auto;
+    }
+
+    .location {
+      flex: 1 1 auto;
+    }
+
+    .search-btn {
+      order: 4;
+      flex: 0 1 auto;
+      align-self: auto;
+    }
+  }
+
+  .bottom-section {
+    .dropdown-container {
+      padding-right: 50px;
+
+      .dropdown {
+        .btn {
+          margin-left: 5px;
+          width: 200px;
+          float: right;
+          text-align: right;
+          .dropdown-title {
+            float: left;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.applicant-list-container {
+  margin: 40px 2.8% 40px 2.8%;
+  padding: 30px 3% 30px 3%;
+  background-color: #fff;
+
+  .table {
+    .applicant-name {
+      width: 10%;
+    }
+
+    .job-type {
+      width: 10%;
+    }
+
+    .action-container {
+      color: #1890ff;
+      .view-icon {
+        font-size: 1.2rem;
+        padding-right: 5px;
+      }
+    }
+
+    .action-container:hover {
+      color: #fdbc40;
+    }
+    .applicant-skills-container {
+      display: flex;
+      justify-content: flex-start;
+      flex-flow: row wrap;
+
+      .skill-item {
+        border: 1px solid #117cc5;
+        border-radius: 2px;
+        color: #2f54eb;
+        background-color: #f0f5ff;
+        padding: 0 5px 0 5px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

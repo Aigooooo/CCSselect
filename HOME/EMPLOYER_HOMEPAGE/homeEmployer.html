@@ -1,10 +1,248 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Employer Home</title>
-        <link rel="stylesheet" href="../header.css">
-    </head>
-    <body>
-        <h1>Employer Home</h1>   
-    </body>
+  <head>
+    <title>Employer Home</title>
+    <link rel="stylesheet" href="../header.css" />
+    <link rel="stylesheet" href="homeEmployer.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="../../images/ccsselectlogo.png" alt="" class="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Post a Job</a>
+            </li>
+          </ul>
+          <div class="right-content">
+            <i class="fa fa-bell notification-bell"></i>
+            <button class="profile-btn">
+              <i class="fa fa-user-circle"></i> Profile
+            </button>
+            <div class="dropdown-container">
+              <div class="dropdown dropstart">
+                <i
+                  class="fa fa-sort-down dropdown-icon"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                ></i>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="home-content-container">
+      <div class="home-content">
+        <div class="left-home-content">
+          <img
+            src="../../images/employer-homepage-illustration.svg"
+            alt=""
+            class="homepage-illustration"
+          />
+        </div>
+        <div class="right-home-content">
+          <h1 class="home-content-title">
+            Browse different types of applicants.
+          </h1>
+          <p class="home-content-description">
+            Looking for the right person for the job has never been this easy.
+          </p>
+          <button type="button" class="btn btn-outline-light">
+            Get Started
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="job-listing-header">
+      <div class="top-section">
+        <div class="top-section-details">
+          <h1 class="top-section-title">Applicants List</h1>
+          <p class="top-section-description">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
+        <form class="top-right-section">
+          <div class="search-container">
+            <input
+              type="text"
+              class="search"
+              placeholder=" &#xF002;  Search for Applicant's Job Type, Desired Position, skills and more"
+              style="font-family: Arial, 'Font Awesome 5 Free'"
+            />
+
+            <button type="submit" class="search-btn">
+              <div class="search-icon"><i class="fa fa-search"></i></div>
+              Search Jobs
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="bottom-section">
+        <div class="dropdown-container">
+          <div class="dropdown">
+            <button
+              class="btn dropdown-toggle btn-outline-dark"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <p class="dropdown-title">Skills</p>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button
+              class="btn dropdown-toggle btn-outline-dark"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <p class="dropdown-title">Desired Position</p>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button
+              class="btn dropdown-toggle btn-outline-dark"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <p class="dropdown-title">Job Types</p>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="applicant-list-container">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Job Type</th>
+            <th scope="col">Desired Position/s</th>
+            <th scope="col" class="skills-table-header">Skills</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="applicant-name">John Doe</td>
+            <td class="job-type">Employee</td>
+            <td class="desired-positions">Software Engineer, Web Developer</td>
+            <td>
+              <div class="applicant-skills-container">
+                <div class="skill-item">React JS</div>
+                <div class="skill-item">MongoDB</div>
+                <div class="skill-item">Web Developing</div>
+                <div class="skill-item">Express JS</div>
+                <div class="skill-item">UI/UX Design</div>
+              </div>
+            </td>
+            <td class="action-container">
+              <i class="fa fa-eye view-icon"></i>View Profile
+            </td>
+          </tr>
+          <tr>
+            <td class="applicant-name">Katrina Temz</td>
+            <td class="job-type">Intern</td>
+            <td class="desired-positions">QA Engineer, UI/UX Designer</td>
+            <td>
+              <div class="applicant-skills-container">
+                <div class="skill-item">Python</div>
+                <div class="skill-item">Machine Learning</div>
+                <div class="skill-item">Automation</div>
+                <div class="skill-item">Javascript</div>
+              </div>
+            </td>
+            <td class="action-container">
+              <i class="fa fa-eye view-icon"></i>View Profile
+            </td>
+          </tr>
+          <tr>
+            <td class="applicant-name">Larry Thorn</td>
+            <td class="job-type">Employee</td>
+            <td class="desired-positions">
+              Data Analyst, Software Engineer, A.I Engineer
+            </td>
+            <td>
+              <div class="applicant-skills-container">
+                <div class="skill-item">PostgreSQL</div>
+                <div class="skill-item">C#</div>
+                <div class="skill-item">PHP</div>
+                <div class="skill-item">Python</div>
+                <div class="skill-item">Java</div>
+              </div>
+            </td>
+            <td>
+              <div class="action-container">
+                <i class="fa fa-eye view-icon"></i>View Profile
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
