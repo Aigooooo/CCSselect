@@ -57,6 +57,20 @@ body {
   color: #fff;
   padding: 2% 5%;
 }
+.dashboard .dashboard-header .breadcrumb .breadcrumb-item {
+  color: #fdbc40;
+}
+.dashboard .dashboard-header .breadcrumb .breadcrumb-item a {
+  color: #fff;
+  text-decoration: none;
+}
+.dashboard .dashboard-header .breadcrumb .active {
+  font-weight: 500;
+  text-decoration: underline;
+}
+.dashboard .dashboard-header .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  color: #fff;
+}
 .dashboard .dashboard-content {
   display: flex;
   margin: 30px 5% 30px 5%;
