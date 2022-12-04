@@ -55,7 +55,7 @@ body {
 .dashboard .dashboard-header {
   background-color: #015792;
   color: #fff;
-  padding: 2% 2%;
+  padding: 2% 5%;
 }
 .dashboard .dashboard-content {
   display: flex;
