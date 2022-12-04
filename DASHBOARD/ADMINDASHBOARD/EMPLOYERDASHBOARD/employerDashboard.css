@@ -1,0 +1,78 @@
+body {
+  width: 100%;
+  background: #ebebeb !important;
+}
+
+.navbar .container-fluid {
+  padding: 10px 50px 10px 50px;
+}
+.navbar .container-fluid .navbar-brand {
+  width: 180px;
+}
+.navbar .container-fluid .navbar-brand .logo {
+  width: 100%;
+}
+.navbar .container-fluid .profile-btn {
+  background-color: #015792;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 9px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.navbar .container-fluid .profile-btn:hover {
+  background-color: #117cc5;
+}
+.navbar .container-fluid .navbar-nav .nav-item {
+  font-size: 1.2rem;
+  margin-right: 20px;
+}
+.navbar .container-fluid .right-content {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .container-fluid .right-content .notification-bell {
+  color: #015792;
+  font-size: 18px;
+}
+.navbar .container-fluid .right-content .notification-bell:hover {
+  color: #fdbc40;
+  font-size: 18px;
+}
+.navbar .container-fluid .right-content .dropdown-container .dropstart .dropdown-menu[data-bs-popper] {
+  top: auto;
+  right: 0;
+}
+.navbar .container-fluid .right-content .dropdown-container .dropstart .dropdown-icon {
+  font-size: 23px;
+  padding-bottom: 10px;
+  color: #015792;
+}
+
+.dashboard .dashboard-header {
+  background-color: #015792;
+  color: #fff;
+  padding: 2% 5%;
+}
+.dashboard .dashboard-content {
+  display: flex;
+  margin: 30px 5% 30px 5%;
+}
+.dashboard .dashboard-content .dashboard-card {
+  background-color: #fff;
+  width: 25%;
+  border: 2px solid #cccccc;
+  border-radius: 20px;
+  padding: 30px 3% 8% 3%;
+  margin-right: 3%;
+}
+.dashboard .dashboard-content .dashboard-card .dashboard-card-content .dashboard-card-icon {
+  padding-bottom: 10px;
+}
+.dashboard .dashboard-content .dashboard-card .dashboard-card-content .dashboard-card-title {
+  font-size: 1.7rem;
+  font-weight: bold;
+}/*# sourceMappingURL=employerDashboard.css.map */
