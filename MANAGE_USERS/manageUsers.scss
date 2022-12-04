@@ -1,0 +1,128 @@
+body {
+  width: 100%;
+  background: #ebebeb !important;
+}
+
+.navbar {
+  .container-fluid {
+    padding: 10px 50px 10px 50px;
+
+    .navbar-brand {
+      width: 180px;
+      .logo {
+        width: 100%;
+      }
+    }
+
+    .profile-btn {
+      background-color: #015792;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      padding: 9px 16px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .profile-btn:hover {
+      background-color: #117cc5;
+    }
+
+    .navbar-nav {
+      .nav-item {
+        font-size: 1.2rem;
+        margin-right: 20px;
+      }
+    }
+
+    .right-content {
+      width: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .notification-bell {
+        color: #015792;
+        font-size: 18px;
+      }
+
+      .notification-bell:hover {
+        color: #fdbc40;
+        font-size: 18px;
+      }
+
+      .dropdown-container {
+        .dropstart {
+          .dropdown-menu[data-bs-popper] {
+            top: auto;
+            right: 0;
+          }
+
+          .dropdown-icon {
+            font-size: 23px;
+            padding-bottom: 10px;
+            color: #015792;
+          }
+        }
+      }
+    }
+  }
+}
+
+.table-container {
+  margin: 30px 5% 20px 5%;
+  background-color: #fff;
+
+  .table-header {
+    background-color: #015792;
+    color: #fff;
+    padding: 2%;
+
+    .breadcrumb {
+      .breadcrumb-item {
+        color: #fdbc40;
+      }
+
+      .breadcrumb-item a {
+        color: #fff;
+        text-decoration: none;
+      }
+      .active {
+        font-weight: 500;
+        text-decoration: underline;
+      }
+      .breadcrumb-item + .breadcrumb-item::before {
+        color: #fff;
+      }
+    }
+  }
+
+  .table-filter-section {
+    padding: 20px 2% 20px 2%;
+    border-bottom: 1px solid #c4c4c4;
+
+    .roles {
+      display: flex;
+      .role-item {
+        margin-right: 10px;
+        padding-right: 10px;
+        border-right: 1px solid #c4c4c4;
+      }
+
+      .applicant-role {
+        border-right: none;
+      }
+    }
+  }
+
+  .user-table {
+    padding: 10px 1.4% 10px 1.4%;
+
+    .table {
+      .action-btn {
+        border: none;
+        background: none;
+      }
+    }
+  }
+}
