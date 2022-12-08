@@ -65,7 +65,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <?php
+                <?php
                 $query = "SELECT * FROM accounts";
                 $result = mysqli_query($conn, $query);
                 if(mysqli_num_rows($result) > 0)

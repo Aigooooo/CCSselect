@@ -8,6 +8,8 @@
     $firstName = $_POST['firstName'];
     $lastName = $_POST['lastName'];
     $company = $_POST['company_name'];
+    $age = $_POST['age'];
+    $industry = $_POST['industry'];
     $email = $_POST['email'];
     $password = $_POST['password'];
     $phoneNumber = $_POST['phoneNumber'];
@@ -20,8 +22,8 @@
     if(!empty($firstName) || !empty($lastName) || !empty($company) || !empty($email) || !empty($password) ||!empty($phoneNumber))
     {
         $select = "SELECT email FROM accounts WHERE email = ? LIMIT 1";
-        $insert = "INSERT INTO accounts (firstName, lastName, company_name, email, password, dateRegistered, role, verificationStatus, phoneNumber, profilePic) 
-                    VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+        $insert = "INSERT INTO accounts (firstName, lastName, age, industry, company_name, email, password, dateRegistered, role, verificationStatus, phoneNumber, profilePic) 
+                    VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
         $stmt = $conn->prepare($select);
         $stmt->bind_param("s", $email);
@@ -34,7 +36,7 @@
             $stmt->close();
             $stmtDb = $conn->prepare($insert);
             $otp = rand(100000,999999);
-            $stmtDb->bind_param("ssssssssis",$firstName, $lastName, $company, $email, $password, $date_val, $role, $verificationStatus, $phoneNumber, $profilePic);
+            $stmtDb->bind_param("ssisssssssis",$firstName, $lastName, $age, $industry, $company, $email, $password, $date_val, $role, $verificationStatus, $phoneNumber, $profilePic);
             $stmtDb->execute();
             
             if($stmt)

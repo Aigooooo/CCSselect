@@ -1,0 +1,45 @@
+body{
+    background-color: #EFEFEF !important;
+    font-family: Poppins !important;
+}
+.container{
+    margin: 3% auto;
+    background-color: white;
+}
+.manage-users{
+    background-color: #001D3D;
+    padding: 2% 2%;
+    margin: 0%;
+    color: white;
+}
+.manage-users h1{
+    color: white;
+}
+.table-filt{
+    display: flex;
+    margin-left: -2%;
+}
+.role-count ul{
+    margin-top: 2%;
+    display: flex;
+    list-style-type: none;
+}
+.role-count ul li{
+    margin-right: 10%;
+}
+table td{
+    padding: 1%;
+}
+.user-table{
+    margin: 1%;
+}
+.user-table td{
+    width: 7%;
+}
+.action-btn{
+    cursor: pointer;
+}
+button{
+    border: none;
+}
+
