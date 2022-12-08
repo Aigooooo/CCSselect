@@ -41,7 +41,7 @@
                     $_SESSION['age'] = $row['age'];
                     $_SESSION['email'] = $row['email'];
                     //$_SESSION['password'] = $row['password'];   
-                    header("Location: /CCSSELECT/HOME/ADMIN_HOMEPAGE/homeAdmin.php");
+                    header("Location: /CCSSELECT/DASHBOARD/ADMINDASHBOARD/adminDashboard.php");
                 }
             }
             else
