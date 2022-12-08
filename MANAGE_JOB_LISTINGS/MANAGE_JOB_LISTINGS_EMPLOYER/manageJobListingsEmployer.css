@@ -87,6 +87,12 @@ body {
 .table-container .search-bar-section .input-group .btn:hover {
   background-color: #26ab35;
 }
+.table-container .search-bar-section .add-btn {
+  background-color: #26ab35;
+  border: none;
+  height: 40px;
+  margin-left: 20px;
+}
 .table-container .user-table {
   padding: 10px 1.4% 10px 1.4%;
 }
@@ -99,4 +105,4 @@ body {
   display: flex;
   justify-content: flex-end;
   padding-right: 5%;
-}/*# sourceMappingURL=manageJobListings.css.map */
+}/*# sourceMappingURL=manageJobListingsEmployer.css.map */
