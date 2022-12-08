@@ -49,7 +49,11 @@ body {
   border: none;
   padding: 10px 15% 10px 15%;
 }
-.user-selection-container .bottom-section .btn-container .user-type-btn .btn-text {
+.user-selection-container
+  .bottom-section
+  .btn-container
+  .user-type-btn
+  .btn-text {
   font-size: 1.3rem;
   font-weight: 400;
   text-decoration: none;
@@ -57,4 +61,4 @@ body {
 }
 .user-selection-container .bottom-section .btn-container .user-type-btn:hover {
   background-color: #0d6fb1;
-}/*# sourceMappingURL=userSelection.css.map */
+} /*# sourceMappingURL=userSelection.css.map */
