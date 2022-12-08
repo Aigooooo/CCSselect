@@ -57,8 +57,8 @@
                     <tr>
                         <th scope="col">ID</th>
                         <th scope="col">Name</th>
+                        <th scope="col">Role</th>
                         <th scope="col">Email</th>
-                        <th scope="col">Account Created</th>
                         <th scope="col">Date Created</th>
                         <th scope="col">Actions</th>
                         <th scope="col">Status</th>
@@ -66,7 +66,7 @@
                 </thead>
                 <tbody>
                 <?php
-                $query = "SELECT * FROM accounts";
+                $query = "SELECT * FROM accounts WHERE role = 'Employer' OR role = 'Applicant'";
                 $result = mysqli_query($conn, $query);
                 if(mysqli_num_rows($result) > 0)
                 {
